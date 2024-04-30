@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculater</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="main.css">
+</head>
+<body>
+     <div class="container-fluid">
+         <div class="row">
+              <div class="col-lg-5 col-md-7 col-sm-10 offset-lg-3 offset-md-3 offset-sm-1 mt-5 main shadow-sm rounded p-3">
+                      <h5 class="text-center pb-2 text-white shadow-sm">Age Calculater</h5> 
+                   <div class="d-flex flex-row ms-5">
+                       <h6 class="text-white mt-2">Date Of Birth</h6>
+                       <div class="input-group ms-2">
+                           <select name="" id="month"  class="form-control">
+                              <option value="1">Jan</option>
+                              <option value="2">Feb</option>
+                              <option value="3">Mar</option>
+                              <option value="4">Apr</option>
+                              <option value="5">May</option>
+                              <option value="6">Jun</option>
+                              <option value="7">Jul</option>
+                              <option value="8">Aug</option>
+                              <option value="9">Sep</option>
+                              <option value="10">Oct</option>
+                              <option value="11">Nov</option>
+                              <option value="12">Dec</option>
+                          </select>
+                      </div>
+
+                       <div class="input-group ms-2">
+                           <select name="" id="day" class="form-control">
+                              <option value="1">01</option>
+                              <option value="2">02</option>
+                              <option value="3">03</option>
+                              <option value="4">04</option>
+                              <option value="5">05</option>
+                              <option value="6">06</option>
+                              <option value="7">07</option>
+                              <option value="8">08</option>
+                              <option value="9">09</option>
+                              <option value="10">10</option>
+                              <option value="11">11</option>
+                              <option value="12">12</option>
+                              <option value="13">13</option>
+                              <option value="14">14</option>
+                              <option value="15">15</option>
+                              <option value="16">16</option>
+                              <option value="17">17</option>
+                              <option value="18">18</option>
+                              <option value="19">19</option>
+                              <option value="20">20</option>
+                              <option value="21">21</option>
+                              <option value="22">22</option>
+                              <option value="23">23</option>
+                              <option value="24">24</option>
+                              <option value="25">25</option>
+                              <option value="26">26</option>
+                              <option value="27">27</option>
+                              <option value="28">28</option>
+                              <option value="29" id="twantynine">29</option>
+                              <option value="23" id="tharty">30</option>
+                              <option value="31" id="lastdate">31</option>
+
+                          </select>
+                       </div>
+                       <div class="input-group ms-2">
+                           <input type="number" class="form-control" id="year" value="">
+                       </div>
+                   </div>
+                   <!--today date-->
+
+                   <div class="d-flex flex-row mt-2 ">
+                       <h6 class="text-white mt-2 ms-2">Age at the Date of</h6>
+                       <div class="input-group ms-2">
+                           <select name="" id="month2" class="form-control">
+                              <option value="1">Jan</option>
+                              <option value="2">Feb</option>
+                              <option value="3">Mar</option>
+                              <option value="4">Apr</option>
+                              <option value="5">May</option>
+                              <option value="6">Jun</option>
+                              <option value="7">Jul</option>
+                              <option value="8">Aug</option>
+                              <option value="9">Sep</option>
+                              <option value="10">Oct</option>
+                              <option value="11">Nov</option>
+                              <option value="12">Dec</option>
+                          </select>
+                       </div>
+
+                      <div class="input-group ms-2">
+                            <select name="" id="day2" class="form-control">
+                                <option value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                                <option value="5">05</option>
+                                <option value="6">06</option>
+                                <option value="7">07</option>
+                                <option value="8">08</option>
+                                <option value="9">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29" id="twantynines">29</option>
+                                <option value="23" id="thartys">30</option>
+                                <option value="31" id="lastdates">31</option>
+                           </select>
+                      </div>
+                       <div class="input-group ms-2">
+                          <input type="number" class="form-control" id="year2" value="2023">
+                      </div>
+                  </div>
+                  <div class="mt-2 text-center">
+                      <button class="btn btn-success" id="btn">Calculate</button>
+                  </div>
+                   <div id="result">
+                        <span>Your Age : </span><span id="yeardiff"></span><span> Year </span>
+                        <span id="monthdiff"></span><span> Month </span>
+                        <span id="daydiff"></span><span> Day</span>
+                   </div>
+              </div>
+          </div>    
+     </div>
+
+       <div id="demo"></div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.main {
+    background-color: #7f8c8d;
+}
+
+.input-group {
+    width: 66px;
+}
+
+#month,
+#month2,
+#day,
+#day2,
+#year,
+#year2 {
+    outline: unset;
+    box-shadow: none;
+    border: 1px solid green;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#result {
+    font-weight: bold;
+    color: #c1cccd;
+    text-align: center;
+}
+
+#yeardiff,
+#monthdiff,
+#daydiff {
+    font-size: 20px;
+}
+
+#result {
+    display: none;
+}
